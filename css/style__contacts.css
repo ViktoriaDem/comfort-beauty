@@ -1,0 +1,112 @@
+/*-----------------------MAIN----------------------------*/
+.main__contacts {
+  flex: 1 1 auto;
+  background-color: #fff;
+}
+.main__body {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 -15px;
+}
+
+/*-------------------------IMAGE-BLOCK--------------------*/
+.image__block {
+  width: 100%;
+  margin: 40px 0px;
+  overflow-x: hidden;
+}
+.image__block img {
+  width: 100%;
+}
+
+/*-------------------CONTACT-BLOCK--------------------------*/
+.contacts__title {
+  width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 36px 0px;
+}
+.contact__title {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+.contact__line {
+  height: 3px;
+  margin-top: 10px;
+  background-color: #cda861;
+}
+.information {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  padding: 80px 170px;
+  background: rgba(205, 168, 97, 0.2);
+  border-radius: 50px;
+}
+.text__contact {
+  font-size: calc(24px + 6 * (100vw / 1920));
+  line-height: calc(35px + 6 * (100vw / 1920));
+  padding-top: 66px;
+}
+.text__contact p span {
+  font-weight: 700;
+}
+.map {
+  object-fit: none;
+  width: calc(735 / 1100 * 100%);
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/*--------------------------SEND-BLOCK----------------------------*/
+.send__text {
+  width: 90.125rem;
+  font-size: 1.875rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto 2.5rem;
+  padding: 2.5rem 0.625rem;
+}
+.fields__container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -23px -40px;
+}
+.container__column {
+  flex: 0 1 33.333%;
+  padding: 0px 23px 40px;
+}
+.input__field {
+  border: 1px solid #000;
+  background-color: #f4f4f4;
+  width: 100%;
+  padding: 28px 22px;
+  font-size: calc(18px + 5 * (100vw / 1920));
+  line-height: calc(26px + 5 * (100vw / 1920));
+}
+.input__field::-webkit-input-placeholder {
+  color: #646464;
+  font-size: calc(18px + 5 * (100vw / 1920));
+  line-height: calc(26px + 5 * (100vw / 1920));
+}
+.container__column:last-child {
+  flex: 0 1 100%;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 4.5rem;
+}
+.btn button{
+  width: 82.85%;
+  padding: 1.25rem;
+  background-color: #5e6748;
+  font-size: calc(13px + 5 * (100vw / 1920));
+  line-height: calc(20px + 5 * (100vw / 1920));
+  color: #fff;
+}
