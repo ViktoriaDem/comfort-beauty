@@ -21,6 +21,11 @@
     <header class="header">
       <div class="header__container">
         <div class="header_up">
+          <div class="burger">
+            <div class="menu__icon">
+              <span></span>
+            </div>
+          </div>
           <div class="logo">
             <img src="../img/header/logo.svg" alt="logo" class="img_logo">
             <h1 class="site_name">Comfort&Beauty</h1>
@@ -30,24 +35,25 @@
               <img src="../img/header/loupe.svg" alt="search" class="loupe">
               <div class="search__title">Search here</div>
             </div>
-            <img src="../img/header/shopping_cart.svg" alt="shopping_cart" class="cart">
-            <div class="number_of_things">0</div>
+            <div class="cart__container">
+              <img src="../img/header/shopping_cart.svg" alt="shopping_cart" class="cart">
+              <div class="number_of_things">0</div>
+            </div>
           </div>
         </div>
         <div class="line"></div>
-        <nav>
+        <nav class="menu__body">
           <ul class="menu">
             <li class="menu_item"><a href="../index.html">HOME</a></li>
-            <li class="menu_item active"><a href="catalog.html">SHOP</a></li>
-            <li class="menu_item"><a href="about.html">ABOUT</a></li>
-            <li class="menu_item"><a href="contacts.html">CONTACTS</a></li>
+            <li class="menu_item active"><a href="../html/catalog.html">SHOP</a></li>
+            <li class="menu_item"><a href="../html/about.html">ABOUT</a></li>
+            <li class="menu_item"><a href="../html/contacts.html">CONTACT</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main class="main">
-
       <div class="sale" id="sale">
         <div class="sale__container">
           <div class="sale__box">Sale</div>
@@ -107,33 +113,18 @@
                 <img src="../img/catalog/svg/arrow.svg" alt="">
               </div>
             </div>
-
-            <div class="product_of_the_month">
-              <h4 class="product__title">Product of the month</h4>
-              <div class="product__line"></div>
-              <div class="product__block">
-                <img src="../img/catalog/png/product_of_the_month.png" alt="">
-                <div class="product__description">
-                  <div class="product__name">Kugoo Kirin M4</div>
-                  <div class="product__cost">29 900 ₽</div>
-                </div>
-              </div>
-            </div>
-
           </div>
 
           <div class="catalog__block">
             <div class="catalog">
-
               <div class="goods">
                 <div class="label hit">
                   <p>hit</p>
                 </div>
+                <img src="../img/catalog/png/goods1.png" alt="">
                 <div class="add__to__cart">
                   <p>add to cart</p>
                 </div>
-                <img src="../img/catalog/png/goods1.png" alt="">
-
                 <h4 class="good__name">Desk - White Oak</h4>
                 <div class="good__line"></div>
                 <div class="cost">$1 890</div>
@@ -150,11 +141,11 @@
                 <div class="label new">
                   <p>new</p>
                 </div>
+                <a href="goods.html"><img src="../img/catalog/png/goods2.png" alt=""></a>
                 <div class="add__to__cart">
                   <p>add to cart</p>
                 </div>
-                <a href="goods.html"><img src="../img/catalog/png/goods2.png" alt=""></a>
-                <h4 class="good__name">Linen upholstered chair</h4>
+                <h4 class="good__name">Upholstered chair</h4>
                 <div class="good__line"></div>
                 <div class="cost">$1 550</div>
                 <div class="stars">
@@ -170,10 +161,10 @@
                 <div class="label hit">
                   <p>hit</p>
                 </div>
+                <img src="../img/catalog/png/goods3.png" alt="">
                 <div class="add__to__cart">
                   <p>add to cart</p>
                 </div>
-                <img src="../img/catalog/png/goods3.png" alt="">
                 <h4 class="good__name">Kitchen table - White Oak</h4>
                 <div class="good__line"></div>
                 <div class="cost">$2 200</div>
@@ -190,11 +181,11 @@
                 <div class="label new">
                   <p>new</p>
                 </div>
+                <img src="../img/catalog/png/goods4.png" alt="">
                 <div class="add__to__cart">
                   <p>add to cart</p>
                 </div>
-                <img src="../img/catalog/png/goods4.png" alt="">
-                <h4 class="good__name">Linen upholstered chair</h4>
+                <h4 class="good__name">Upholstered chair</h4>
                 <div class="good__line"></div>
                 <div class="cost">$1 970</div>
                 <div class="stars">
@@ -207,11 +198,11 @@
               </div>
 
               <div class="goods">
+                <img src="../img/catalog/png/goods5.png" alt="">
                 <div class="add__to__cart">
                   <p>add to cart</p>
                 </div>
-                <img src="../img/catalog/png/goods5.png" alt="">
-                <h4 class="good__name">Linen upholstered chair</h4>
+                <h4 class="good__name">Upholstered chair</h4>
                 <div class="good__line"></div>
                 <div class="cost">$2 400</div>
                 <div class="stars">
@@ -224,11 +215,11 @@
               </div>
 
               <div class="goods">
+                <img src="../img/catalog/png/goods6.png" alt="">
                 <div class="add__to__cart">
                   <p>add to cart</p>
                 </div>
-                <img src="../img/catalog/png/goods6.png" alt="">
-                <h4 class="good__name">Linen upholstered chair</h4>
+                <h4 class="good__name">Upholstered chair</h4>
                 <div class="good__line"></div>
                 <div class="cost">$3 600</div>
                 <div class="stars">
@@ -241,10 +232,10 @@
               </div>
 
               <div class="goods">
+                <img src="../img/catalog/png/goods7.png" alt="">
                 <div class="add__to__cart">
                   <p>add to cart</p>
                 </div>
-                <img src="../img/catalog/png/goods7.png" alt="">
                 <h4 class="good__name">Ash wood armchair</h4>
                 <div class="good__line"></div>
                 <div class="cost">$3 400</div>
@@ -258,11 +249,11 @@
               </div>
 
               <div class="goods">
+                <img src="../img/catalog/png/goods8.png" alt="">
                 <div class="add__to__cart">
                   <p>add to cart</p>
                 </div>
-                <img src="../img/catalog/png/goods8.png" alt="">
-                <h4 class="good__name">Linen upholstered chair</h4>
+                <h4 class="good__name">Upholstered chair</h4>
                 <div class="good__line"></div>
                 <div class="cost">$2 350</div>
                 <div class="stars">
@@ -278,10 +269,10 @@
                 <div class="label new">
                   <p>new</p>
                 </div>
+                <img src="../img/catalog/png/goods9.png" alt="">
                 <div class="add__to__cart">
                   <p>add to cart</p>
                 </div>
-                <img src="../img/catalog/png/goods9.png" alt="">
                 <h4 class="good__name">Recycle wood table</h4>
                 <div class="good__line"></div>
                 <div class="cost">$2 790</div>
@@ -298,11 +289,11 @@
                 <div class="label new">
                   <p>new</p>
                 </div>
+                <img src="../img/catalog/png/goods10.png" alt="">
                 <div class="add__to__cart">
                   <p>add to cart</p>
                 </div>
-                <img src="../img/catalog/png/goods10.png" alt="">
-                <h4 class="good__name">Linen upholstered chair</h4>
+                <h4 class="good__name">Upholstered chair</h4>
                 <div class="good__line"></div>
                 <div class="cost">$1 550</div>
                 <div class="stars">
@@ -315,11 +306,11 @@
               </div>
 
               <div class="goods">
+                <img src="../img/catalog/png/goods11.png" alt="">
                 <div class="add__to__cart">
                   <p>add to cart</p>
                 </div>
-                <img src="../img/catalog/png/goods11.png" alt="">
-                <h4 class="good__name">Linen upholstered chair</h4>
+                <h4 class="good__name">Upholstered chair</h4>
                 <div class="good__line"></div>
                 <div class="cost">$1 220</div>
                 <div class="stars">
@@ -332,10 +323,10 @@
               </div>
 
               <div class="goods">
+                <img src="../img/catalog/png/goods12.png" alt="">
                 <div class="add__to__cart">
                   <p>add to cart</p>
                 </div>
-                <img src="../img/catalog/png/goods12.png" alt="">
                 <h4 class="good__name">Ceramic vases</h4>
                 <div class="good__line"></div>
                 <div class="cost">$750</div>
@@ -348,12 +339,10 @@
                 </div>
               </div>
             </div>
-
             <div class="show__more">
               <h4>show more</h4>
               <img src="../img/catalog/svg/arrow.svg" alt="">
             </div>
-
           </div>
         </div>
 
@@ -384,7 +373,6 @@
           </a>
         </div>
       </div>
-
     </main>
 
     <footer class="footer">
@@ -394,8 +382,7 @@
           <a href="https://www.facebook.com/"><img src="../img/footer/facebook.svg" alt="facebook" class="icon"></a>
           <a href="https://www.youtube.com/"><img src="../img/footer/youtube.svg" alt="youtube" class="icon"></a>
           <a href="https://www.pinterest.com/"><img src="../img/footer/pinterest.svg" alt="pinterest" class="icon"></a>
-          <a href="https://www.instagram.com/"><img src="../img/footer/instagram.svg" alt="instagram"
-              class="icon"></a>
+          <a href="https://www.instagram.com/"><img src="../img/footer/instagram.svg" alt="instagram" class="icon"></a>
         </div>
         <div class="text__footer">
           <pre class="pre">LET'S  BE  FRIEND</pre>
@@ -410,5 +397,4 @@
 
   </div>
 </body>
-
 </html>
