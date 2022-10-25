@@ -1,15 +1,13 @@
-/*-----------------------MAIN----------------------------*/
+/*----------------------------------------------------------------------MAIN--------------------------------------------------------------------*/
 .main__contacts {
   flex: 1 1 auto;
   background-color: #fff;
 }
 .main__body {
-  max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 -15px;
+  padding: 0 15px;
 }
-
-/*-------------------------IMAGE-BLOCK--------------------*/
 .image__block {
   width: 100%;
   margin: 40px 0px;
@@ -18,16 +16,29 @@
 .image__block img {
   width: 100%;
 }
-
-/*-------------------CONTACT-BLOCK--------------------------*/
+@media (min-width: 1480px) {
+  .main__body {
+    width: 1440px;
+  }
+}
+@media (max-width: 1024px) {
+  .image__block {
+    margin: 20px 0px;
+  }
+}
+@media (max-width: 768px) {
+  .image__block {
+    margin-top: 120px;
+  }
+}
+/*------------------------------------------------------------------CONTACT-BLOCK---------------------------------------------------------------*/
 .contacts__title {
-  width: 800px;
   text-align: center;
-  margin: 0 auto;
   padding: 36px 0px;
 }
 .contact__title {
-  font-size: 35px;
+  font-size: calc(24px + 11 * (100vw / 1920));
+  line-height: calc(27px + 11 * (100vw / 1920));
   text-transform: uppercase;
 }
 .contact__line {
@@ -38,47 +49,107 @@
 .information {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 15px;
   width: 100%;
-  height: auto;
-  padding: 80px 170px;
+  padding: 80px 100px;
   background: rgba(205, 168, 97, 0.2);
   border-radius: 50px;
+  margin-bottom: 50px;
 }
 .text__contact {
-  font-size: calc(24px + 6 * (100vw / 1920));
-  line-height: calc(35px + 6 * (100vw / 1920));
-  padding-top: 66px;
+  flex: 1 1 30%;
+  font-size: calc(14px + 5 * (100vw / 1920));
+  line-height: calc(26px + 5 * (100vw / 1920));
 }
 .text__contact p span {
   font-weight: 700;
 }
 .map {
   object-fit: none;
-  width: calc(735 / 1100 * 100%);
+  flex: 1 1 60%;
 }
 .map iframe {
   width: 100%;
-  height: 100%;
+  height: 480px;
 }
-
+@media (max-width: 1250px) {
+  .information {
+    padding: 80px 50px;
+  }
+  .map iframe {
+    height: 400px;
+  }
+}
+@media (max-width: 900px) {
+  .text__contact {
+    flex: 1 1 40%;
+   }
+  .map iframe {
+    height: 280px;
+  }
+  .map {
+    flex: 1 1 40%;
+  }
+}
+@media (max-width: 768px) {
+  .information {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 25px;
+    padding: 50px 50px;
+    margin-bottom: 40px;
+  }
+  .text__contact,
+  .map {
+    width: 100%;
+  }
+  .map iframe {
+    height: 300px;
+  }
+}
+@media (max-width: 600px) {
+  .information {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 25px;
+    padding: 50px 25px;
+    margin-bottom: 30px;
+  }
+  .map iframe {
+    height: 250px;
+  }
+}
+@media (max-width: 420px) {
+  .information {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 25px;
+    padding: 50px 25px;
+  }
+  .map iframe {
+    height: 220px;
+  }
+}
 /*--------------------------SEND-BLOCK----------------------------*/
+.send__block {
+  margin-bottom: 70px;
+}
 .send__text {
-  width: 90.125rem;
-  font-size: 1.875rem;
-  line-height: 2.5rem;
+  font-size: calc(20px + 10 * (100vw / 1920));
+  line-height: calc(30px + 10 * (100vw / 1920));
   font-weight: 600;
   text-align: center;
-  margin: 0 auto 2.5rem;
-  padding: 2.5rem 0.625rem;
+  margin: 0 auto;
+  padding: 35px 0;
 }
 .fields__container {
   display: flex;
   flex-wrap: wrap;
-  margin: 0px -23px -40px;
+  gap: 40px;
 }
 .container__column {
-  flex: 0 1 33.333%;
-  padding: 0px 23px 40px;
+  flex: 1 1 30%;
 }
 .input__field {
   border: 1px solid #000;
@@ -94,19 +165,43 @@
   line-height: calc(26px + 5 * (100vw / 1920));
 }
 .container__column:last-child {
-  flex: 0 1 100%;
+  flex: 1 1 100%;
 }
 .btn {
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  margin-bottom: 4.5rem;
 }
 .btn button{
-  width: 82.85%;
-  padding: 1.25rem;
+  width: 80%;
+  padding: 20px 0;
   background-color: #5e6748;
   font-size: calc(13px + 5 * (100vw / 1920));
   line-height: calc(20px + 5 * (100vw / 1920));
   color: #fff;
+}
+@media (max-width: 900px) {
+  .fields__container {
+    gap: 30px;
+  }
+  .input__field {
+    padding: 10px 15px;
+  }
+  .btn {
+    margin-top: 30px;
+  }
+  .btn button{
+    padding: 15px 0;
+  }
+}
+@media (max-width: 650px) {
+  .send__block {
+    margin-bottom: 50px;
+  }
+  .fields__container {
+    gap: 20px;
+  }
+  .btn {
+    margin-top: 20px;
+  }
 }
